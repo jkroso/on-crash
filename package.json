@@ -1,0 +1,17 @@
+{
+  "name": "on-crash",
+  "version": "0.1.0",
+  "description": "listen for the next uncaught error x-platform",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jkroso/on-crash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkroso/on-crash/issues"
+  },
+  "keywords": ["crash","uncaught","error","onerror"],
+  "author": "Jake Rosoman",
+  "license": "MIT"
+}

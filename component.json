@@ -1,0 +1,15 @@
+{
+  "name": "on-crash",
+  "repo": "jkroso/on-crash",
+  "description": "listen for the next uncaught error x-platform",
+  "version": "0.1.0",
+  "keywords": ["crash","uncaught","error","onerror"],
+  "dependencies": {},
+  "development": {
+    "jkroso/serve": "1.5.0"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
