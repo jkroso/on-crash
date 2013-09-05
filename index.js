@@ -11,14 +11,17 @@ module.exports = typeof window == 'undefined'
 		var old = process._events.uncaughtException
 		process._events.uncaughtException = function(e){
 			process._events.uncaughtException = old
-			fn()
+			fn(e)
 		}
 	}
 	: function browser(fn){
 		var old = onerror
-		onerror = function(){
+		onerror = function(msg, file, line){
 			onerror = old
-			fn()
+			var e = new Error(msg.slice(msg.indexOf(':') + 2))
+			e.file = file
+			e.line = line
+			fn(e)
 			return true
 		}
 	}
